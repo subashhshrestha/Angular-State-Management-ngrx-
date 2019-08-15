@@ -1,0 +1,20 @@
+<div class="main">
+  <div class='nav'>
+
+  </div>
+
+  <div class="container">
+    <div class="row text-center text-lg-left">
+      <div class="col-lg-3 col-md-4 col-6" *ngFor="let item of (users |async)">
+        <span class="d-block mb-4 h-100 user-image" (click)="navigateToUser(item.login)">
+          <div class="card">
+            <img class="img-fluid img-thumbnail" [src]="item.avatar_url" alt="">
+            <div class="card-body">
+              <h5 class="card-title">{{item.login}}</h5>
+            </div>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

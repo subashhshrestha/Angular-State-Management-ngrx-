@@ -3,7 +3,7 @@ import { Store } from '@ngrx/store';
 import { GAppState } from './store/state/app.state';
 import { GetUsers, GetUser } from './store/actions/user.action';
 import { GUser } from './models/user.interface';
-import { selectUserList, selectedUser } from './store/state/user.selector';
+import { selectUserList, selectedUser } from './store/selectors/user.selector';
 import { Observable } from 'rxjs';
 
 @Component({

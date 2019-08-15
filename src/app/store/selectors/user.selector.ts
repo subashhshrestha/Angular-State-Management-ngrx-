@@ -1,6 +1,6 @@
-import { GAppState } from "./app.state";
+import { GAppState } from "../state/app.state";
 import { createSelector } from '@ngrx/store';
-import { GUserState } from './user.state';
+import { GUserState } from '../state/user.state';
 
 const selectUsers = (state: GAppState) => state.users;
 

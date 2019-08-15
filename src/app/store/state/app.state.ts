@@ -5,6 +5,7 @@ export interface GAppState {
 
 export const initialAppState: GAppState = {
     users: initialUserState
+
 };
 
 export function getInitialState(): GAppState {
